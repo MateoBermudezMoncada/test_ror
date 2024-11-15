@@ -1,0 +1,18 @@
+<ul>
+    <% @writings.each do |writing| %> 
+      <li>
+        <p>
+            <a href="/writings">All Writings</a>
+        </p>
+        <strong><%= writing.title %></strong>
+        por: <%= writing.author %>
+        <p>
+            <%= writing.description %>
+        </p>
+        <p>
+            <strong><%= writing.category %></strong>
+        </p>
+      </li>
+    <% end %>
+  </ul>
+  
